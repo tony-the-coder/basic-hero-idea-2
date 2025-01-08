@@ -1,0 +1,82 @@
+
+
+/* A quick reminder on how to preload an image to keep the image from flickering during certain effects */
+/* body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(/img/temp-pic.jpg)
+} */
+
+
+.header-main {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row; /* This is the regular way that flex displays  */
+    flex-wrap: wrap; /*Default method*/
+    justify-content: space-between; /*Horizontally */
+    align-content: normal; /*Vertically and the overall structure of the entire container*/
+    /*gap: 50px 40px Sets a specifiec gap between items like divs*/
+    align-items: center;/* Aligns the items inside the child elements and overrides any other child elements; has different opitions like other items like flex-end */
+}
+
+/* Images portion of image flicker reminder, but it does not always happen, I need to remember that!!! */
+/* .img {
+    width: 300;
+    height: 500;
+    background-image: url(/img/temp-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all ease-in-out 1s;
+}
+
+
+.img:hover {
+    width: 1000;
+    height: 1000;
+    background-image: url(/img/river.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+
+.header-main div {
+    height: 30px;
+    
+}
+
+.header-main .div-1 {
+    background-color: #B391de;
+    order: 1; /*Specifies the order of the content. */
+    /*flex-basis: 100px; Sets the fixed width size */
+    /*flex-shrink: 1; Shrinks the div to the size of the content. */
+    flex: 0 0 100px;  /*The order to put everyting in at once grow shrink basis */
+}
+
+.header-main .div-2{
+    
+    background-color: #6ADE95;
+    order: 2;
+    flex-basis: 100px;
+    flex-grow: 1; /* Grows the div to take the size at a certain speed or something like that. */
+    flex: 0 0 100px;
+    align-self: flex-end;/* Align an individual items */
+}
+
+.header-main .div-3 {
+     
+    background-color: #DEA954;
+    order: 3;
+    flex-basis: 100px; 
+    /* flex-grow: 2; */
+    flex: 0 0 100px;
+    
+}
+
+
