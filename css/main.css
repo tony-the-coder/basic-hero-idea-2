@@ -29,11 +29,30 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
 p {
     font-size: 14px;
     line-height: 18px;
     color: #fff;
-    font-family: "Playwrite IE Guides", serif;
+    font-family: "Rubik Viny", serif;
    
 }
 
@@ -142,4 +161,18 @@ margin-left: 30px;
     background-image: url("/img/instagram-color.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.test {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 15vh;
+}
+
+
+footer {
+
+    height: 5vh;
+    background-color: aliceblue;
 }
