@@ -1,31 +1,17 @@
 /* Start of hero section */
 main {
-    position: relative; /* To position the video and text within the main section */
-    min-height: 100vh; /* Ensure main is at least as tall as the viewport */
+    width: 100%;
+    height: calc(100vh - 60px);
     background-color: #1a253a;
     margin-top: 60px;
+    background-image: url(../img/random-scene.jpg),url(../img/galaxy.jpg);
+    background-size: 70vh, cover;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
     display: flex;
-    flex-direction: column; /* Stack video and text vertically */
+    justify-content: center;
     align-items: center;
-    z-index: 100;
-    overflow: hidden; /* Hide the text that overflows the main section */
-}
-
-video {
-    position: absolute; /* To position the text above the video */
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-}
-
-main.main-intro {
-    position: absolute; /* Position the text above the video */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center perfectly */
-    color: white;
-    text-align: center; /* Center text */
-    z-index: 101; /* Ensure text is above video */
-    /* width: 100%; Make the text container span the full width */
+    z-index:100;
 }
 
 main .main-intro h1 {
