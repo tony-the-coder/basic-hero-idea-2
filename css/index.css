@@ -4,14 +4,18 @@ main {
     height: calc(100vh - 60px);
     background-color: #1a253a;
     margin-top: 60px;
-    background-image: url(../img/random-scene.jpg),url(../img/galaxy.jpg);
-    background-size: 70vh, cover;
+    /* background-image: url(../img/random-scene.jpg),url(../img/galaxy.jpg); */
+    
+    background-image: url(../img/random-scene.jpg);
+
+    background-size:  70vh, cover;
     background-repeat: no-repeat;
-    background-position: bottom, center;
+    background-position: bottom left calc(50% + 80px), center;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index:100;
+    column-gap: 500px;
 }
 
 main .main-intro h1 {
@@ -36,10 +40,21 @@ main a {
     transition: transform 0.2s ease-in-out;
 }
 
+
+/* Button hover */
+main a:hover {
+    transition: transform 0.5s ease-in;
+    transform: scale(0.95);
+    /* border: #fff 1px solid; */
+
+}
+
 /* Add a button click animation */
+
 
 main a:active {
     transform: scale(0.95);
+    background-color: red;
 }
 
 /* End of button click animation */
@@ -54,14 +69,14 @@ main .main-quotes p:nth-child(2){
 }
 
 main .main-intro {
-    position: relative;
-    right: 20vh;
+    /* position: relative;
+    right: 20vh; */
     padding-bottom: 8vh;
  }
  
  main .main-quotes {
-     position: relative;
-     left: 4vh;
+     /* position: relative;
+     left: 4vh; */
      padding-bottom: 8vh;
  }
 /* End of hero section */
@@ -137,8 +152,114 @@ flex-wrap: wrap;
     font-size: 22px;
     line-height: 28px;
     text-align: center;
-    text-shadow: -2px 2px 4px #000;
+    text-shadow: -2px 2px 4px #1a253a;
     z-index: 100; 
     
 }
 /* End of category section */
+
+
+/* Start About Section */
+
+.index-about {
+
+    width: 100%;
+    padding: 60px 0;
+    background-color: #1a253a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.index-about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.index-about-text {
+    flex-basis: 455px;
+}
+
+
+.index-about-text p {
+    padding: 20px 0;
+}
+
+.index-about-text a {
+    font-size: 18px;
+    display: block;
+    background-color: var(--site-color-01);
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* Button hover */
+.index-about-text a:hover {
+    transition: transform 0.5s ease-in;
+    transform: scale(0.95);
+    background-color: var(--site-color-01);
+    /* border: #fff 1px solid; */
+
+}
+
+/* Add a button click animation */
+
+
+.index-about-text a:active {
+    transform: scale(0.95);
+    background-color: red;
+}
+
+
+.index-about-skill {
+    flex-basis: 350px;
+
+}
+
+
+.index-about-skill-bar {
+    width: calc(100%-8px);
+    height: 20px;
+    border: solid 4px #0B0F16;
+}
+
+.index-about-skill-bar-fill {
+    /* width: 100%; */
+    height: 100%;
+    background-color: var(--site-color-01);
+}
+
+
+.htmlcss {
+    width: 95%;
+}
+
+.js {
+    width: 80%;
+}
+
+.pr {
+    width: 70%;
+}
+
+.ae {
+    width: 60%;
+}
+
+.ps {
+    width: 95%;
+}
+
+.ai {
+    width: 85%;
+}
+
+
+
+
+/* End about section */
